@@ -35,3 +35,11 @@ Acabas de Aprender a usar un archivo .bat con parametros mientras inicias de for
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+## Disclaimer
+
+Esto esta optimizado para usarse en Windows.
+
+Puede que te solicite alguna interacción en el proceso de instalación.
+
+Esta programado para crear el Proyecto en el Desktop/Escritorio de tu ordenador
