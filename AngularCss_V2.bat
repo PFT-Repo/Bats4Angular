@@ -13,8 +13,12 @@ if exist "%Desktop%" (
     cd /d "%Desktop%\%~1"
     ng new %~2 --skip-install --routing=false --style css
     cd /d "%Desktop%\%~1\%~2"
-    ng g m components/components
-    ng g service services/services
+    ng g m components/components --flat
+    ng g service services/mainservice
+    ng g p pipes/mainpipe
+    cd /d "%Desktop%\%~1\%~2/src/app/"
+    md "pages"
+    cd /d "../.."
     code .
     echo Dale enter para cerrar la terminal
     pause 
