@@ -28,13 +28,13 @@ if exist "%Desktop%" (
     md "assets/images"
     md "assets/icons"
     md "assets/data"
-    cd /d "../.."
+    cd /d "%Desktop%\%~1\%~2"
     npm install
     npm i @ngx-translate/core @ngx-translate/http-loader --save
     ng add @angular-eslint/schematics 
+    npm install --save-dev --save-exact prettier
+    ng add @angular/material
     code .
-    echo Dale enter para cerrar la terminal
-    pause 
     exit
 ) else (
     echo No se ha encontrado la carpeta Escritorio
