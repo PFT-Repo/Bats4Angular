@@ -15,6 +15,7 @@ if exist "%Desktop%" (
     cd /d "%Desktop%\%~1\%~2"
     ng g m core
     ng g m core/components
+    ng g m core/auth
     ng g service core/coreservice
     ng g m features --routing
     ng g m features/components
@@ -23,6 +24,7 @@ if exist "%Desktop%" (
     ng g environments
     cd /d "%Desktop%\%~1\%~2/src/app/
     md "features/services"
+    md "core/standalones"
     cd /d "%Desktop%\%~1\%~2/src
     md "assets/i18n"
     md "assets/images"
@@ -30,9 +32,9 @@ if exist "%Desktop%" (
     md "assets/data"
     cd /d "%Desktop%\%~1\%~2"
     npm install
-    npm i @ngx-translate/core @ngx-translate/http-loader --save
-    ng add @angular-eslint/schematics 
+    npm install primeflex @ngx-translate/core @ngx-translate/http-loader --save
     npm install --save-dev --save-exact prettier
+    ng add @angular-eslint/schematics
     ng add @angular/material
     code .
     exit
